@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <h1 id="title">Form- DOM Manupulation</h1>
+    <p id="description">Practiced example of DOM Manupulation</p>
+    <form action="" id="form">
+        
+        <fieldset  class="nameContainer">
+            <legend>Name</legend>
+
+            <div class="div">
+                <label for="first-name">First Name<span aria-label="required">*</span></label>
+                <input type="text" name="first-name" id="first-name" placeholder="Eg: Joe">
+            </div>
+            <div class="div">
+                <label for="last-name">Last Name<span>*</span></label>
+                <input type="text" name="last-name" id="last-name" placeholder="Eg: Biden">
+            </div>
+        </fieldset>
+
+        <fieldset class="locationContainer">
+            <legend>Location Details</legend>
+            
+
+            <div class="div address">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="30" rows="5"></textarea>
+            </div>
+            <div class="locationChoice">
+            <div class="div">
+                <label for="state">State</label>
+                <input type="text" name="state" id="state" >
+            </div>
+            <div class="div">
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country" >
+            </div>
+            <div class="div">
+                <label for="pincode">Pincode</label>
+                <input type="text" name="pincode" id="pincode" >
+            </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="gender">
+            <legend>Gender</legend>
+            <div class="div">
+                <input type="radio" name="gender" id="gender1" value="Male" >
+                <label for="gender1">Male</label>
+            </div>
+            <div class="div">
+                <input type="radio" name="gender" id="gender2" value="Female" >
+                <label for="gender2">Female</label>
+            </div>
+            <div class="div">
+                <input type="radio" name="gender" id="gender3" value="Others" >
+                <label for="gender3">Other</label>
+            </div>
+        </fieldset>
+        <fieldset class="food">
+            <legend>Favourite Food</legend>
+            <div class="div">
+                <input class="foodcheck" type="checkbox" name="food" id="food" value="Idly">
+                <label for="food">Idly</label>
+            </div>
+            <div class="div">
+                <input class="foodcheck" type="checkbox" name="food" id="food2" value="Poori">
+                <label for="food2">Poori</label>
+            </div>
+            <div class="div">
+                <input class="foodcheck" type="checkbox" name="food" id="food3" value="Chapathi">
+                <label for="food3">Chapathi</label>
+            </div>
+            <div class="div">
+                <input class="foodcheck" type="checkbox" name="food" id="food4" value="Parota">
+                <label for="food4">Parota</label>
+            </div>
+            <div class="div">
+                <input class="foodcheck" type="checkbox" name="food" id="food5" value="Dosa">
+                <label for="food5">Dosa</label>
+            </div>
+        </fieldset>
+        <button id="submit" class="btn btn-primary" form="form" type="submit" onclick="radio(event)">Submit</button>
+    </form>
+    
+
+<p id="demo"></p>
+<h3>Data</h3>
+    <table id="table">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Food</th>
+            <th>State</th>
+            <th>Country</th>
+        </tr>
+    </table>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
