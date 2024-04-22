@@ -13,7 +13,7 @@ function radio(event){
         if(food.length > 1){
             let foodList = "";
             for(i=0;i<food.length;i++){
-                foodList += food[i].value;
+                foodList += " " + food[i].value;
             }
             create(firstName, lastName, address,pincode, state, country,radioValue,foodList);
             document.getElementById("form").reset();
